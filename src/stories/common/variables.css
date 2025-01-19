@@ -1,0 +1,19 @@
+:root {
+  --primary_50: #E9FFE4;
+  --primary_100: #CEFFC5;
+  --primary_300: #63FF53;
+  --primary_500: #0AD100;
+  --primary_600: #03B500;
+  --primary_800: #086C08;
+  --primary_950: #003302;
+  --neutral_50: #FCF5EB;
+  --neutral_100: #FAEDDA;
+  --neutral_400: #E29955;
+  --neutralBlack: #F5F5F5;
+  --secondary_950: #111B21;
+  --secondary_800: #324C58;
+  --secondary_600: #3B6C7F;
+  --secondary_300: #92C2CE;
+  --secondary_100: #DDECF0;
+  --white: #FFFFFF;
+}

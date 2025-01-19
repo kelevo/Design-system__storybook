@@ -1,0 +1,33 @@
+@import '../common/variables.css';
+
+.button {
+  border: solid 3px var(--secondary_950);
+  border-radius: 12px;
+  color: var(--secondary_950);
+  cursor: pointer;
+  background-color: var(--primary_500);
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+button:hover {
+  box-shadow: -4px 4px 0px var(--secondary_950);
+  transform: translate(4px);
+  transition: 0.2s;
+}
+.button--filled {
+  background-color: var(--primary_500);
+}
+.button--outlined {
+  background-color: var(--white);
+}
+.button--small {
+  padding: 8px 16px;
+}
+.button--medium {
+  padding: 12px 24px;
+}
+.button--large {
+  padding: 16px 32px;
+}
