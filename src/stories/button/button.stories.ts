@@ -9,6 +9,18 @@ export default {
   render: (args) => {
     return createButton(args);
   },
+  argTypes: {
+    label: { control: 'text' },
+    onClick: { action: 'onClick' },
+    style: {
+      control: { type: 'radio' },
+      options: ['filled', 'outlined']
+    },
+    size: {
+      control: { type: 'select' },
+      options: ['small', 'medium', 'large'],
+    },
+  },
 
 } satisfies Meta<ButtonProps>;
 

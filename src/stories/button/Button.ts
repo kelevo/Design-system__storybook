@@ -8,7 +8,7 @@ export interface ButtonProps {
 }
 
 export const createButton = ({
-  style = 'outlined',
+  style = 'filled',
   size = 'small',
   label,
   onClick
