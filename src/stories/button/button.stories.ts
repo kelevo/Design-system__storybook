@@ -21,7 +21,20 @@ export default {
   title: 'Design System/Atoms/Button',
   tags: ['Design Systems', 'Atoms'],
   parameters: {
-    layout: 'centered',
+    //layout: 'centered',
+    backgrounds: {
+      default: 'white',
+      values: [
+        {
+          name: 'black',
+          value: '#000000'
+        },
+        {
+          name: 'white',
+          value: '#FFFFFF'
+        }
+      ]
+    }
   },
   decorators: [decorator],
   render: (args) => {
@@ -29,7 +42,6 @@ export default {
   },
   argTypes: {
     label: { control: 'text' },
-    onClick: { action: 'onClick' },
     style: {
       control: { type: 'radio' },
       options: ['filled', 'outlined']
@@ -38,6 +50,10 @@ export default {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],
     },
+    onClick: {
+      description: 'Evento de click del boton',
+      action: 'clicked',
+    }
   },
 
 } satisfies Meta<ButtonProps>;
