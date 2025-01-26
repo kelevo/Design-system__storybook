@@ -17,6 +17,7 @@ export const createButton = ({
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.innerText = label;
+  btn.role = 'button';
 
   if (onClick) btn.addEventListener('click', onClick);
 
